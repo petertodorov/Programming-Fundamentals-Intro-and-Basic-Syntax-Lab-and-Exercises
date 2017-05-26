@@ -1,0 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class MilesToKilometers
+{
+    public static void Main()
+    {
+        decimal miles = decimal.Parse(Console.ReadLine());
+        decimal km = miles* 1.60934M;
+        Console.WriteLine($"{km:F2}");
+    }
+}
