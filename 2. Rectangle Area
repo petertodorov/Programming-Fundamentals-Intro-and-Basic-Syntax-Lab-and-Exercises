@@ -8,6 +8,7 @@ public class RectangleArea
         float a = float.Parse(Console.ReadLine());
         float b = float.Parse(Console.ReadLine());
         float result = a * b;
+        
         Console.WriteLine($"{result:F2}");
     }
 }
