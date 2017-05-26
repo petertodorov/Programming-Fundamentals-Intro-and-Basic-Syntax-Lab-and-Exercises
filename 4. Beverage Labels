@@ -1,0 +1,16 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class BeverageLabels
+{
+    public static void Main()
+    {
+        string name = Console.ReadLine();
+        int volume= int.Parse(Console.ReadLine());
+        int energy = int.Parse(Console.ReadLine());
+        int sugarContent = int.Parse(Console.ReadLine());
+        decimal kCal = (volume * energy)/100M;
+        decimal sugars = (volume * sugarContent)/100M;
+        Console.WriteLine($"{volume}ml {name}:\n{kCal}kcal, {sugars}g sugars");
+    }
+}
