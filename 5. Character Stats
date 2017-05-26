@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class CharacterStats
+{
+    public static void Main()
+    {
+        string name = Console.ReadLine();
+        int currentHealth = int.Parse(Console.ReadLine());
+        int maximumHealth = int.Parse(Console.ReadLine());
+        int currentEnergy = int.Parse(Console.ReadLine());
+        int maximumEnergy = int.Parse(Console.ReadLine());
+
+        int healthDots = maximumHealth - currentHealth;
+        int energyDots = maximumEnergy - currentEnergy;
+
+        Console.WriteLine($"Name: {name}");
+        Console.WriteLine($"Health: |{new string('|', currentHealth)}{new string('.', healthDots)}|");
+        Console.WriteLine($"Energy: |{new string('|', currentEnergy)}{new string('.', energyDots)}|");
+
+    }
+}
